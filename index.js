@@ -7,7 +7,9 @@ while (i < cartItems.length) {
   totalCost += Number(price);
   i++;
 }
-if (confirm(`Your total is $${totalCost}. Do you want to proceed to checkout?`)) {
+if (
+  confirm(`Your total is $${totalCost}. Do you want to proceed to checkout?`)
+) {
   alert("Thank you for your purchase!");
 } else {
   alert("Purchase canceled.");
@@ -42,7 +44,9 @@ switch (userInput) {
 
 // qn3
 let rideType = prompt("Choose your ride: UberX, UberXL, UberBlack", "UberX");
-let confirmation = confirm("You selected " + rideType + ". Do you want to confirm the booking?");
+let confirmation = confirm(
+  "You selected " + rideType + ". Do you want to confirm the booking?"
+);
 
 if (confirmation) {
   alert("Your " + rideType + " is being booked...");
@@ -72,7 +76,7 @@ alert("Thanks for rating! Here are your ratings:\n" + ratings.join("\n"));
 
 // qn5
 const videoQualities = ["720p", "1080p", "4K"];
-let userInput = prompt(`Choose your video quality:"720p","1080p","4k"`);
+var userChoice = prompt(`Choose your video quality:"720p","1080p","4k"`);
 switch (userChoice.toLowerCase()) {
   case "1":
     alert(`You have selected 720p quality. Enjoy your video quality`);
